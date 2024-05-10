@@ -25,7 +25,24 @@ isJohnEqual = (ageJohn == ageMark);
 
 //if (false) 1 Moglichkeit // fack it !
  //   if(isJohnOlder) 2 Moglichkeit // Verweis auf ein Testergebnis
-    if(ageJohn > ageMark) // 3 Moglichkeit // Test
-   { // codeblock
-    console.log("John ist älter!");
+ //   if(ageJohn > ageMark) // 3 Moglichkeit // Test
+ //  { // codeblock
+   // console.log("John ist älter!");
+//}
+
+/************ IF - ELSE ************/
+// mit Alternative
+// entweder ja oder nein
+
+//if (true)
+//    if(false) 11 Moglichkeit // fack it !
+ //   if(isJohnOlder) 22 Moglichkeit // Verweis auf ein Testergebnis
+    if(ageJohn > ageMark) // 33 Moglichkeit // Test
+     { // ja - zweig
+        console.log("John ist älter!");
+    
+} else 
+{ // Alternative- zweig
+    console.log("John ist jünger!");
+    
 }
