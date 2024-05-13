@@ -1,7 +1,7 @@
 // Entscheidungsstrukturen | control flow
 
 // Deklaration + Assignment
-const ageJohn = 30;
+/*const ageJohn = 30;
 const ageMark = 20;
 
 // Deklaration
@@ -17,7 +17,7 @@ isJohnEqual = (ageJohn == ageMark);
  console.log("isJohnOlder: " + isJohnOlder);
  console.log("isJohnEqual: " + isJohnEqual);
  console.log("------------------");
-
+*/
 /************ IF  ************/
 // TINA --> There is no alternative!
 // entweder JA oder nix ... alternativlos
@@ -49,7 +49,7 @@ isJohnEqual = (ageJohn == ageMark);
 
 
 /************  Ternäre (ternary) Schreibweise ************/
- console.log( (isJohnOlder) ? "John is older" : "Mark is older");
+ //console.log( (isJohnOlder) ? "John is older" : "Mark is older");
 
 
 /************ IF - ELSE IF  ************/
@@ -70,3 +70,38 @@ isJohnEqual = (ageJohn == ageMark);
  //  console.log("John ist jünger!");
     
 // }
+
+/****** Fallunterscheidung / SWITCH|CASE 1 ******/
+
+const firstName = "Jane"
+let job;
+
+ job = "driver";  // .. fährt TAXI! / UBER
+ job = "diver"; // .. taucht im Rhein!
+ job = "artist"; // .. malt ein Bild!
+ job = "pilot"; // .. macht etwas anderes! --> default
+ job = "teacher"; // .. unterrichtet!
+ job = "instructor"; // .. unterrichtet!
+
+switch (job) 
+{
+  case "driver": // Test auf gleichheit..
+    console.log(firstName + " .. fährt TAXI! ");
+    break;
+  case "diver": // Test auf gleichheit..
+  console.log(firstName + " .. taucht im Rhein! ");
+  break;
+  case "artist": // Test auf gleichheit..
+  console.log(firstName + " .. malt ein Bild! ");
+  break;
+  case "teacher": // Test auf gleichheit..
+  case "instructor": // Test auf gleichheit..
+  console.log(firstName + " .. unterrichtet! ");
+  break;
+
+
+  default:
+    console.log(firstName + " .. macht etwas anderes! ");
+
+    break;
+}
